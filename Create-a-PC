@@ -1,0 +1,65 @@
+cpu = ['Intel', 'AMD', 'Apple silicon']
+ram = ['8gb', '16gb', '32gb', '64gb']
+brand = ['HP', 'Dell', 'Apple', 'Asus']
+
+print('Choose your choice of CPU:')
+print('1) Intel')
+print('2) AMD')
+print('3) Apple Silicon')
+
+selected_cpu = input('Enter 1, 2, or 3: ')
+
+if selected_cpu == '1':
+    chosen_cpu = cpu[0]
+elif selected_cpu == '2':
+    chosen_cpu = cpu[1]
+elif selected_cpu == '3':
+    chosen_cpu = cpu[2]
+else:
+    chosen_cpu = "Unknown"
+
+print(f'You chose: {chosen_cpu}')
+
+print('Now choose your choice of memory:')
+print('1) 8gb')
+print('2) 16gb')
+print('3) 32gb')
+print('4) 64gb')
+
+ram_choice = input('Enter 1, 2, 3, 4: ')
+
+if ram_choice == '1':
+    selected_ram = ram[0]
+elif ram_choice == '2':
+    selected_ram = ram[1]
+elif ram_choice == '3':
+    selected_ram = ram[2]
+elif ram_choice == '4':
+    selected_ram = ram[3]
+else:
+    selected_ram = 'Invalid choice'
+
+print(f'You chose: {selected_ram}')
+
+print('Now choose your brand choice: ')
+print('1) HP')
+print('2) Dell')
+print('3) Apple')
+print('4) Asus')
+
+brand_choice = input('Enter 1, 2, 3, 4: ')
+
+if brand_choice == '1':
+    selected_brand = brand[0]
+elif brand_choice == '2':
+    selected_brand = brand[1]
+elif brand_choice == '3':
+    selected_brand = brand[2]
+elif brand_choice == '4':
+    selected_brand = brand[3]
+else:
+    selected_brand = 'Invalid choice'
+
+print(f'You chose: {selected_brand}')
+
+print(f'You now have a {selected_brand} computer with {selected_ram} of memory and {chosen_cpu} processor.')
